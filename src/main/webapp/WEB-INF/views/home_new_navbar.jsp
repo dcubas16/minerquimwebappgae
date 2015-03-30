@@ -14,23 +14,58 @@
 ================================================== -->
 <body>
 	<c:import url="../views/jspf/header.jsp" />
-	<section id="home" class="head-main-img">
-
+	<c:import url="../views/jspf/carousel.jsp" />
+	<section id="presentation" class="section-style">
+		<div class="container" style="padding-top: 60px">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h1 class="section-black-font-style">
+						IMPORTACIÓN, DISTRIBUCIÓN Y VENTA DE INSUMOS QUÍMICOS PARA LOS DIFERENTES SECTORES DE LA INDUSTRIA
+					</h1>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</section>
+	<section id="products"
+		class="section-style background-image-style"
+		style="background-image: url('resources/images/background-mining.fw.png');">
 		<div class="container">
-			<div class="row text-center pad-row">
-				<div class="col-md-12">
-					<h1>OUR SERVICES</h1>
+			<div class="row">
+				<div class="col-md-6">
+					<h1 class="section-white-font-style">INDUSTRIA DEL CUERO</h1>
+				</div>
+				<div class="col-md-6">
+					<h1 class="section-white-font-style">MINERÍA</h1>
 				</div>
 			</div>
 		</div>
-		<div id="mainContent" style="height: 3000px;">
-			<p>add space for scroll.</p>
+	</section>
+		<section id="services" class="section-style">
+		<div class="container" style="padding-top: 100px">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h1 class="section-black-font-style">
+						SOMOS IMPORTADORES DIRECTOS
+					</h1>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</section>
+		<section id="products"
+		class="section-style background-image-style"
+		style="background-image: url('resources/images/background-leather.fw.png');">
+		<div class="container" style="padding-top: 100px">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="section-white-font-style">ASESORÍA TÉCNICA EN TODOS NUESTROS PRODUCTOS</h1>
+				</div>
+			</div>
 		</div>
 	</section>
 	<c:import url="../views/jspf/footer.jsp" />
-
-	
 </body>
-
-<!-- http://jsfiddle.net/velcrobots/6qrQF/1/ -->
 </html>

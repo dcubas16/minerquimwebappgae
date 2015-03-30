@@ -22,11 +22,11 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav nav-minerquim-style header-menu-style">
-					<li class="active"><a href="index.html"><strong>INICIO</strong></a></li>
-					<li><a href="services.html">NOSOTROS</a></li>
-					<li><a href="portfolio.html">PRODUCTOS</a></li>
-					<li><a href="pricing.html">SERVICIOS</a></li>
-					<li><a href="contact.html">CONTACTANOS</a></li>
+					<li class="active"><a href="home.htm"><strong>INICIO</strong></a></li>
+					<li><a href="aboutus.htm">NOSOTROS</a></li>
+					<li><a href="products.htm">PRODUCTOS</a></li>
+					<li><a href="services.htm">SERVICIOS</a></li>
+					<li><a href="contact.htm">CONTACTANOS</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right language-buttom-style">
 					<li class="dropdown"><a href="#" class="dropdown-toggle"

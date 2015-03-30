@@ -3,20 +3,20 @@
 <%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@	taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<!-- <hr class="featurette-divider"> -->
+<hr class="featurette-divider"
+	style="margin-top: 0px; margin-bottom: 0px; border-color: #428bca;">
 <!-- FOOTER -->
 <section id="footer-section">
-
 	<div class="container">
 		<div class="row  pad-bottom">
 			<div class="col-md-4">
 				<h4>
 					<strong>NOSOTROS</strong>
 				</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem
-					ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<a href="#">read more</a>
+				<p>Somos una empresa dedicada a la importación, distribución,
+					venta y asesoramiento técnico de insumos químicos para diversas
+					industrias</p>
+				<a href="#">... leer mas</a>
 			</div>
 			<div class="col-md-4" style="text-align: center;">
 				<h4>
@@ -34,8 +34,7 @@
 					<strong>UBICANOS</strong>
 				</h4>
 				<p>
-					234/JK , The Wondre Land, <br> Newyork Street Junction <br>
-					JUST USA -10909094
+					Calle Shell 130 interior 13 <br>Distrito de Miraflores
 				</p>
 				<a href="#" class="btn btn-primary">Escribenos</a>
 			</div>
@@ -45,15 +44,8 @@
 <a href="#top" id="top-link" class="btn btn-primary btn-circle btn-lg"
 	href="#" role="button"> <span class="glyphicon glyphicon-arrow-up"></span></a>
 <script type="text/javascript">
-	$('#navbar-wrapper').affix({
-		offset : {
-			top : function() {
-				return $('.hero-image').height();
-			}
-		}
-	});
 
-	jQuery.fn.topLink = function(settings) {
+jQuery.fn.topLink = function(settings) {
 		settings = jQuery.extend({
 			min : 1,
 			fadeSpeed : 100

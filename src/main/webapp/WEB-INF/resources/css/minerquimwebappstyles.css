@@ -63,26 +63,39 @@
 	text-align: center;
 }
 
-.homepage-title {
-	font-size: 48px;
-	line-height: 68px;
-	font-family: Montserrat, sans-serif;
+.homepage-title  {
+	line-height: 60px;
 	padding: 0 15px;
 	letter-spacing: -2px;
-	background: rgba(52, 48, 45, .8);
+	background: rgba(52, 48, 45, 0.6);
 	color: #f1f1f1;
 	display: inline-block;
+	margin-top: 0px;
+ 	margin-bottom: 0px;
 }
 
-.homepage-subtitle {
-	font-size: 22px;
-	line-height: 18px;
-	padding: 8px 19px 8px;
-	background: rgba(52, 48, 45, .8);
-	color: #f1f1f1;
-	display: inline-block;
+
+div.carousel-caption.left{
+	left: 15%;
+	text-align: left;
+	padding-bottom: 70px;
 }
 
+div.carousel-caption.center{
+	left: 15%;
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+div.carousel-caption.right{
+	left: 15%;
+	text-align: right;
+	padding-bottom: 70px;
+}
+
+div.carousel-image , img.carousel-image{
+	height: 550px;
+}
 /****************** NAVBAR **********************/
 .minerqauim-navbar-wrapper {
 	/* 	padding-top: 10px; */
@@ -220,6 +233,7 @@
 .minerquim-navbar-style {
 	background-image: url(../images/headerBackGround_.jpg);
 	background-repeat: repeat-x;
+	border-color: #428bca;
 }
 
 .minerquim-navbar-style.navbar-pad-original>div.container-fluid>div.navbar-collapse>ul.nav-minerquim-style
@@ -278,3 +292,5 @@ body {
 	font-family: lucida sans unicode, lucida grande, sans-serif;
 	font-size: 14px;
 }
+
+

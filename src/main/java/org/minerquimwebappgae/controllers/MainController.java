@@ -12,26 +12,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class MainController {
 	
+
 	@RequestMapping(value="home.htm", method=RequestMethod.GET )
-	public String home(Model model)
-	{
-		model.addAttribute("persona", 1);
-		return "home";
-	}
-	
-	@RequestMapping(value="home_prueba.htm", method=RequestMethod.GET )
-	public String home_prueba(Model model)
-	{
-		model.addAttribute("persona", 1);
-		return "home_prueba";
-	}
-	
-	@RequestMapping(value="home_new_navbar.htm", method=RequestMethod.GET )
 	public String home_new_navbar(Model model)
 	{
 		return "home_new_navbar";
 	}
-	
 	
 	
 	@RequestMapping(value="products.htm", method=RequestMethod.GET )
