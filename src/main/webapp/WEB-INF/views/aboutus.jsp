@@ -11,38 +11,37 @@
 ================================================== -->
 <body>
 	<c:import url="../views/jspf/header.jsp" />
-	<section id="aboutUs" class="section-style">
+	<section id="aboutUs">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7">
-					<h2 style="margin-top: 20px;">
-						Minerquim<span class="text-muted"></span>
-					</h2>
-					<p class="lead">Somos una empresa dedicada a la importación,
-						venta y asesoramiento técnico de insumos químicos para las
-						industrias mineras y del cuero</p>
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<h2>Minerquim</h2>
+					<p class="lead" style="text-align: justify;">Somos una empresa
+						dedicada a la importación, venta y asesoramiento técnico de
+						insumos químicos para las industrias mineras y del cuero</p>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<a href="#" class="thumbnail"> <img
 						src="resources/images/oro.jpg">
 					</a>
 				</div>
+				<div class="col-md-1"></div>
 			</div>
 		</div>
 	</section>
-	<section id="goals" class="section-style">
+	<section id="goals">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5">
+				<div class="col-md-1"></div>
+				<div class="col-md-4">
 					<a href="#" class="thumbnail"> <img
 						src="resources/images/leather_11.jpg">
 					</a>
 
 				</div>
-				<div class="col-md-7">
-					<h2 style="margin-top: 20px;">
-						Misión<span class="text-muted"></span>
-					</h2>
+				<div class="col-md-6">
+					<h2>Misión</h2>
 					<p class="lead">
 						Somos una empresa proveedora de productos químicos especializados
 						y servicios asociados enfocados a nuestros clientes para
@@ -56,17 +55,17 @@
 						valores que permitan un progreso responsable.
 					</p>
 				</div>
+				<div class="col-md-1"></div>
 			</div>
 		</div>
 
 	</section>
-	<section id="vision" class="section-style">
+	<section id="vision">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7">
-					<h2 style="margin-top: 20px;">
-						Visión<span class="text-muted"></span>
-					</h2>
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<h2>Visión</h2>
 					<p class="lead">
 						Ser una empresa líder en el suministro, distribución de productos
 						químicos especiales para diferentes procesos de transformación en
@@ -78,11 +77,12 @@
 						crecimiento de sus colaboradores en una interacción viable
 					</p>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-4">
 					<a href="#" class="thumbnail"> <img
 						src="resources/images/coaching-ejecutivos-top.jpg">
 					</a>
 				</div>
+				<div class="col-md-1"></div>
 			</div>
 		</div>
 	</section>

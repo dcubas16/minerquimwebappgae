@@ -76,19 +76,16 @@
 
 
 div.carousel-caption.left{
-	left: 15%;
 	text-align: left;
 	padding-bottom: 70px;
 }
 
 div.carousel-caption.center{
-	left: 15%;
 	text-align: center;
 	padding-bottom: 70px;
 }
 
 div.carousel-caption.right{
-	left: 15%;
 	text-align: right;
 	padding-bottom: 70px;
 }
@@ -292,5 +289,3 @@ body {
 	font-family: lucida sans unicode, lucida grande, sans-serif;
 	font-size: 14px;
 }
-
-

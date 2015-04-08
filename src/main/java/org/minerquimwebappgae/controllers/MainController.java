@@ -14,9 +14,9 @@ public class MainController {
 	
 
 	@RequestMapping(value="home.htm", method=RequestMethod.GET )
-	public String home_new_navbar(Model model)
+	public String home(Model model)
 	{
-		return "home_new_navbar";
+		return "home";
 	}
 	
 	

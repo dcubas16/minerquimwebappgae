@@ -44,3 +44,6 @@
 		</div>
 	</div>
 </header>
+<section class="minerquim-navbar-style" id="separator" style="padding: 0px">
+	<div class="container minerquim-navbar-style" style="height: 100px"></div>
+</section>
