@@ -6,7 +6,7 @@
 
 <html lang="en">
 <head>
-<c:import url="../views/jspf/resources.jsp" />
+<c:import url="../views/jspf/resourcesHome.jsp" />
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -93,7 +93,9 @@
 		</div>
 	</div>
 	<c:import url="../views/jspf/footer.jsp" />
-
+	<script type="text/javascript">
+		viewModelMenu.activeMenuIndex(4);
+	</script>
 </body>
 <script>
 	$(function() {

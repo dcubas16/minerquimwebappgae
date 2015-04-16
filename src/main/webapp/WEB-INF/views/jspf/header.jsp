@@ -21,12 +21,14 @@
 				</a>
 			</div>
 			<div class="navbar-collapse collapse">
+			
+			
 				<ul class="nav navbar-nav nav-minerquim-style header-menu-style">
-					<li class="active"><a href="home.htm"><strong>INICIO</strong></a></li>
-					<li><a href="aboutus.htm">NOSOTROS</a></li>
-					<li><a href="products.htm">PRODUCTOS</a></li>
-					<li><a href="services.htm">SERVICIOS</a></li>
-					<li><a href="contact.htm">CONTACTANOS</a></li>
+					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 0)? 'active' : '' }"><a href="home.htm">INICIO</a></li>
+					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 1)? 'active' : '' }"><a href="aboutus.htm">NOSOTROS</a></li>
+					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 2)? 'active' : '' }"><a href="products.htm">PRODUCTOS</a></li>
+					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 3)? 'active' : '' }"><a href="services.htm">SERVICIOS</a></li>
+					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 4)? 'active' : '' }"><a href="contact.htm">CONTACTANOS</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right language-buttom-style">
 					<li class="dropdown"><a href="#" class="dropdown-toggle"

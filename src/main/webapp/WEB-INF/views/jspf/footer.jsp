@@ -16,7 +16,7 @@
 				<p>Somos una empresa dedicada a la importación, distribución,
 					venta y asesoramiento técnico de insumos químicos para diversas
 					industrias</p>
-				<a href="#">... leer mas</a>
+				<a href="aboutus.htm">... leer mas</a>
 			</div>
 			<div class="col-md-4" style="text-align: center;">
 				<h4>
@@ -36,16 +36,27 @@
 				<p>
 					Calle Shell 130 interior 13 <br>Distrito de Miraflores
 				</p>
-				<a href="#" class="btn btn-primary">Escribenos</a>
+				<a href="contact.htm" class="btn btn-primary">Escribenos</a>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
 </section>
 <a href="#top" id="top-link" class="btn btn-primary btn-circle btn-lg"
 	href="#" role="button"> <span class="glyphicon glyphicon-arrow-up"></span></a>
+	
 <script type="text/javascript">
+	var viewModelMenu = {
+		activeMenuIndex : ko.observable(null),
+		activeSubMenuIndex : ko.observable(null),
+		activeSubSubMenuIndex : ko.observable(null),
 
-jQuery.fn.topLink = function(settings) {
+	};
+	
+	ko.applyBindings(viewModelMenu, $('header')[0]);
+</script>
+
+<script type="text/javascript">
+	jQuery.fn.topLink = function(settings) {
 		settings = jQuery.extend({
 			min : 1,
 			fadeSpeed : 100

@@ -289,3 +289,7 @@ body {
 	font-family: lucida sans unicode, lucida grande, sans-serif;
 	font-size: 14px;
 }
+
+.about-section {
+	padding-bottom: 50px;
+}

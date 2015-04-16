@@ -67,5 +67,9 @@
 		</div>
 	</section>
 	<c:import url="../views/jspf/footer.jsp" />
+	<script type="text/javascript">
+		viewModelMenu.activeMenuIndex(0);
+	</script>
 </body>
 </html>
+
