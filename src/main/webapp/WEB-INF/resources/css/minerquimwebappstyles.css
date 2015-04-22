@@ -63,7 +63,7 @@
 	text-align: center;
 }
 
-.homepage-title  {
+.homepage-title {
 	line-height: 60px;
 	padding: 0 15px;
 	letter-spacing: -2px;
@@ -71,26 +71,25 @@
 	color: #f1f1f1;
 	display: inline-block;
 	margin-top: 0px;
- 	margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
-
-div.carousel-caption.left{
+div.carousel-caption.left {
 	text-align: left;
 	padding-bottom: 70px;
 }
 
-div.carousel-caption.center{
+div.carousel-caption.center {
 	text-align: center;
 	padding-bottom: 70px;
 }
 
-div.carousel-caption.right{
+div.carousel-caption.right {
 	text-align: right;
 	padding-bottom: 70px;
 }
 
-div.carousel-image , img.carousel-image{
+div.carousel-image,img.carousel-image {
 	height: 550px;
 }
 /****************** NAVBAR **********************/
@@ -293,3 +292,34 @@ body {
 .about-section {
 	padding-bottom: 50px;
 }
+
+.image-thumbnail {
+	margin-bottom: 0px;
+}
+
+.h3-thumbnail {
+	margin-top: 10px;
+	text-align: center;
+	height: 52px
+}
+
+.p-thumbnail {
+	text-align: center;
+}
+
+.bs-docs-sidebar .nav>.active>a,.bs-docs-sidebar .nav>.active:hover>a,.bs-docs-sidebar .nav>.active:focus>a
+	{
+	color: rgb(5, 100, 138);
+	border-left: 2px solid rgb(5, 100, 138);
+}
+
+.bs-docs-sidebar .nav>li>a:hover,.bs-docs-sidebar .nav>.active:hover>a,.bs-docs-sidebar .nav>.active:focus>a
+	{
+	color: rgb(5, 100, 138);
+	border-left: 2px solid rgb(5, 100, 138);
+}
+
+.right-navbar{
+	background-color: rgba(0, 0, 0, 0.05); padding-left: 5px; margin-top: 45px;
+}
+style=""

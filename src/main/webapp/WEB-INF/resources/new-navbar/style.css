@@ -31,7 +31,7 @@ section {
 
 p {
     font-weight:300;
-    line-height:30px;
+/*     line-height:30px; */
 }
 .pad-row {
     padding-top:40px;
