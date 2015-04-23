@@ -9,9 +9,9 @@
 </head>
 <!-- NAVBAR
 ================================================== -->
-<body style="background-image: url('resources/images/oro.jpg')">
+<body>
 	<c:import url="../views/jspf/header.jsp" />
-	<section>
+	<section style="background-image: url(resources/images/oro.jpg)">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2"></div>
