@@ -8,38 +8,18 @@
 <c:import url="../views/jspf/resourcesHome.jsp" />
 <script type="text/javascript" src="resources/pdfobject/pdfobject.js"></script> 
 <style type="text/css">
-<!--
 
 #pdf {
-	width: 500px;
-	height: 300px;
-	margin: 2em auto;
-	border: 10px solid #6699FF;
+  width: 100%;
+  height: 550px;
+  border: 5px solid rgba(0, 0, 0, 0.19);
 }
 
-#pdf p {
-   padding: 1em;
-}
-
-#pdf object {
-   display: block;
-   border: solid 1px #666;
-}
-
--->
 </style>
 <script type="text/javascript">
-
-
-
 window.onload = function (){
-
 	var success = new PDFObject({ url: "http://www.peru.gob.pe/docs/estado.pdf" }).embed("pdf");
-	
 };
-
-
-	
 </script>
 </head>
 <body>
@@ -75,7 +55,7 @@ window.onload = function (){
 						style="padding-bottom: 0px; margin-bottom: 0px; border-bottom-width: 6px;">
 						<div class="col-md-12"
 							style="background-color: white; padding-bottom: 6px;">
-							<div id="pdf"><object data="http://www.peru.gob.pe/docs/estado.pdf" type="application/pdf" width="100%" height="100%" internalinstanceid="3"></object></div>
+							<div id="pdf"></div>
 						</div>
 
 					</div>
