@@ -6,25 +6,26 @@
 <html lang="en">
 <head>
 <c:import url="../views/jspf/resourcesHome.jsp" />
-<script type="text/javascript" src="resources/pdfobject/pdfobject.js"></script> 
+<script type="text/javascript" src="resources/pdfobject/pdfobject.js"></script>
 <style type="text/css">
-
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 #pdf {
-  width: 100%;
-  height: 550px;
-  border: 5px solid rgba(0, 0, 0, 0.19);
+	width: 100%;
+	height: 550px;
+	border: 5px solid rgba(0, 0, 0, 0.19);
 }
-
 </style>
 <script type="text/javascript">
-window.onload = function (){
-	var success = new PDFObject({ url: "http://www.peru.gob.pe/docs/estado.pdf" }).embed("pdf");
-};
+	window.onload = function() {
+		var success = new PDFObject({
+			url : "http://www.peru.gob.pe/docs/estado.pdf"
+		}).embed("pdf");
+	};
 </script>
 </head>
 <body>
 	<c:import url="../views/jspf/header.jsp" />
-	<section style="background-image: url(resources/images/oro.jpg)">
+	<section style="background-image: url(resources/images/oro.jpg);padding-bottom: 30px;">
 		<div class="container">
 			<div class="row" style="height: 100%;">
 				<div class="col-md-1"></div>
@@ -39,17 +40,29 @@ window.onload = function (){
 								alt="300x200" style="width: 300px; height: 200px;">
 							</a>
 						</div>
-						<div class="col-md-4"
-							style="padding-top: 6px; padding-right: 6px; padding-left: 6px;">
-							<h2>Sodium Metabisulfite</h2>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-6"
+									style="padding-top: 6px; padding-right: 6px; padding-left: 6px;">
+									<h2>Sodium Metabisulfite</h2>
+								</div>
+								<div class="col-md-6"
+									style="padding-top: 6px; padding-right: 6px; padding-left: 6px; text-align: right;">
+									<a href="#" class="btn btn-default" role="button">Imprimir<span>&nbsp;</span><span
+										class="glyphicon glyphicon-print"></span></a> 
+									<a href="#"	class="btn btn-default" role="button">Descargar<span>&nbsp;</span>
+										<span class="glyphicon glyphicon-cloud-download"></span></a>
+								</div>
+							</div>
+							<div class="row">
+								<p>Se usa como depresante para la obtención de zinc de las
+									rocas sulfatadas que contienen cobre, en un proceso en el cual
+									el cobre es separado por flotación y el zinc posteriormente se
+									separa del remanente.</p>
+							</div>
+
 						</div>
-						<div class="col-md-4"
-							style="padding-top: 6px; padding-right: 6px; padding-left: 6px; text-align: right;">
-							<a href="#" class="btn btn-default" role="button">Imprimir<span>&nbsp;</span><span
-								class="glyphicon glyphicon-print"></span></a> <a href="#"
-								class="btn btn-default" role="button">Descargar<span>&nbsp;</span><span
-								class="glyphicon glyphicon-cloud-download"></span></a>
-						</div>
+
 					</div>
 					<div class="row"
 						style="padding-bottom: 0px; margin-bottom: 0px; border-bottom-width: 6px;">

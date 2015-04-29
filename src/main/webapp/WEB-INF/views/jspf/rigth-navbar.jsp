@@ -4,8 +4,8 @@
 <%@	taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 
-<div class="bs-docs-sidebar hidden-print affix-top" role="complementary">
-	<ul class="nav bs-docs-sidenav right-navbar">
+<div class="bs-docs-sidebar hidden-print affix-top" style="margin-top: 35px;">
+	<ul class="nav bs-docs-sidenav right-navbar" style="margin-top: 0px;">
 		<li class="active"><a href="#overview">Minería</a>
 			<ul class="nav">
 				<li><a href="#overview-doctype">Prod Qui 1</a></li>

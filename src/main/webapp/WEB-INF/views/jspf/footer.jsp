@@ -40,10 +40,15 @@
 			</div>
 			<div class="col-md-1"></div>
 		</div>
+	</div>
 </section>
 <a href="#top" id="top-link" class="btn btn-primary btn-circle btn-lg"
-	href="#" role="button"> <span class="glyphicon glyphicon-arrow-up"></span></a>
-	
+	href="#"> <span class="glyphicon glyphicon-arrow-up"></span></a>
+<style>
+<!--
+
+-->
+</style>
 <script type="text/javascript">
 	var viewModelMenu = {
 		activeMenuIndex : ko.observable(null),
@@ -51,7 +56,7 @@
 		activeSubSubMenuIndex : ko.observable(null),
 
 	};
-	
+
 	ko.applyBindings(viewModelMenu, $('header')[0]);
 </script>
 
