@@ -7,8 +7,6 @@
 <head>
 <c:import url="../views/jspf/resourcesHome.jsp" />
 </head>
-<!-- NAVBAR
-================================================== -->
 <body>
 	<c:import url="../views/jspf/header.jsp" />
 	<section style="background-image: url(resources/images/oro.jpg)">
@@ -22,7 +20,7 @@
 								<img src="resources/images/Industrial-Sodium-Metabisulfite.jpg"
 									alt="300x200" style="width: 300px; height: 200px;">
 								<div class="caption">
-									<h3 style="margin-top: 5px;">Sodium Metabisulfite</h3>
+									<h3 style="margin-top: 5px;">Sodium Metabisulphite</h3>
 									<p>Se usa como depresante para la obtención de zinc de las
 										rocas sulfatadas que contienen cobre, en un proceso en el cual
 										el cobre es separado por flotación y el zinc posteriormente se

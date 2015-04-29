@@ -8,7 +8,7 @@
 <c:import url="../views/jspf/resourcesHome.jsp" />
 <script type="text/javascript" src="resources/pdfobject/pdfobject.js"></script>
 <style type="text/css">
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+/* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css"); */
 #pdf {
 	width: 100%;
 	height: 550px;
@@ -16,11 +16,11 @@
 }
 </style>
 <script type="text/javascript">
-	window.onload = function() {
-		var success = new PDFObject({
-			url : "http://www.peru.gob.pe/docs/estado.pdf"
-		}).embed("pdf");
-	};
+// 	window.onload = function() {
+// 		var success = new PDFObject({
+// 			url : "https://docs.google.com/file/d/0B69Zel8jfJB9VDM2emlXUzZ1bE0/preview"
+// 		}).embed("pdf");
+// 	};
 </script>
 </head>
 <body>
@@ -68,9 +68,9 @@
 						style="padding-bottom: 0px; margin-bottom: 0px; border-bottom-width: 6px;">
 						<div class="col-md-12"
 							style="background-color: white; padding-bottom: 6px;">
-							<div id="pdf"></div>
-						</div>
-
+<!-- 							<div id="pdf"></div> -->
+<!-- <iframe src="http://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe> -->
+<iframe src="https://docs.google.com/file/d/0B69Zel8jfJB9VDM2emlXUzZ1bE0/preview" width="99%" height="480"></iframe>
 					</div>
 				</div>
 				<div class="col-md-2">
