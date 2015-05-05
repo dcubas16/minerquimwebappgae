@@ -44,6 +44,24 @@ public class MainController {
 		return "viewProducts";
 	}
 	
+	@RequestMapping(value="viewProducts1.htm", method=RequestMethod.GET )
+	public String viewProducts1(Model model)
+	{
+		return "viewProducts1";
+	}
+	
+	@RequestMapping(value="viewProducts2.htm", method=RequestMethod.GET )
+	public String viewProducts2(Model model)
+	{
+		return "viewProducts2";
+	}
+	
+	@RequestMapping(value="viewProducts3.htm", method=RequestMethod.GET )
+	public String viewProducts3(Model model)
+	{
+		return "viewProducts3";
+	}
+	
 	@RequestMapping(value="contact.htm", method=RequestMethod.GET )
 	public String contact(Map<String, Object> model)
 	{

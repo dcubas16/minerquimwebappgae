@@ -5,22 +5,21 @@
 
 <html lang="en">
 <head>
-<c:import url="../views/jspf/resourcesHome.jsp" />
+<c:import url="../views/jspf/resources.jsp" />
 </head>
-<!-- NAVBAR
-================================================== -->
 <body>
 	<c:import url="../views/jspf/header.jsp" />
-	<section id="services">
+	<section id="services" style="height: 100%">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-7">
 					<h2>
-						Minerquim<span class="text-muted"></span>
+						<span class="text-muted"><spring:message
+								code="label.enterpriseTitle1" /></span>
 					</h2>
-					<p class="lead">Somos una empresa dedicada a la importación,
-						venta y asesoramiento técnico de insumos químicos para las
-						industrias mineras y del cuero</p>
+					<p class="lead">
+						<spring:message code="label.service1" />
+					</p>
 				</div>
 				<div class="col-md-5">
 					<a href="#" class="thumbnail"> <img
@@ -30,7 +29,7 @@
 			</div>
 		</div>
 	</section>
-
+	<section id="rightNavBar" style="display: none"></section>
 	<c:import url="../views/jspf/footer.jsp" />
 	<script type="text/javascript">
 		viewModelMenu.activeMenuIndex(3);

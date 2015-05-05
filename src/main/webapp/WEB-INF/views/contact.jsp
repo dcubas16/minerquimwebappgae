@@ -6,7 +6,7 @@
 
 <html lang="en">
 <head>
-<c:import url="../views/jspf/resourcesHome.jsp" />
+<c:import url="../views/jspf/resources.jsp" />
 </head>
 <body class="body-style">
 	<c:import url="../views/jspf/header.jsp" />
@@ -17,75 +17,87 @@
 				<div class="col-md-10">
 					<div class="row">
 						<div class="col-md-6">
-							<h3>Envianos un Mensaje</h3>
+							<h3>
+								<spring:message code="label.sendUsAMessage" />
+							</h3>
 							<form id="sendEmailMessageForm" class="form-horizontal"
 								action="Mail/sendMail.htm" method="get"
 								commandName="emailSender">
 								<div class="form-group">
 									<div class="col-md-8">
-										<input type="text" class="form-control input-sm"
-											placeholder="Nombre" data-bv-field="names" name="name">
+										<input data-bind="value:contactViewModel.customerName"
+											type="text" class="form-control input-sm"
+											placeholder="<spring:message code="label.nameMessage" />"
+											data-bv-field="names" name="names">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-md-8">
-										<input type="email" class="form-control input-sm"
-											placeholder="Email" data-bv-field="email" name="emailAddress">
+										<input data-bind="value:contactViewModel.customerEmail"
+											type="email" class="form-control input-sm"
+											placeholder="<spring:message code="label.emailMessage" />"
+											data-bv-field="email" name="email">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-md-8">
-										<input type="tel" class="form-control input-sm"
-											placeholder="Telefono" name="phone">
+										<input data-bind="value:contactViewModel.customerPhone"
+											type="tel" class="form-control input-sm"
+											placeholder="<spring:message code="label.phone" />"
+											name="phone">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-md-12">
-										<textarea class="form-control" rows="3" placeholder="Mensaje"
-											style="height: 208px;" name="emailMessage"></textarea>
+										<textarea data-bind="value:contactViewModel.customerMessage"
+											class="form-control" rows="3" placeholder="Mensaje"
+											style="height: 208px;"
+											name="<spring:message code="label.message" />"></textarea>
 									</div>
 								</div>
 								<div class="form-group" style="padding-right: 15px;">
+
+									<div class="col-md-2">
+										<button type="button" class="btn btn-primary">
+											<spring:message code="label.clean" />
+										</button>
+									</div>
+									<div class="col-md-2">
+										<button type="submit" class="btn btn-primary">
+											<spring:message code="label.sendUsAMessage" />
+										</button>
+									</div>
 									<div class="col-md-8"></div>
-									<div class="col-md-2">
-										<button type="button" class="btn btn-primary">Limpiar</button>
-									</div>
-									<div class="col-md-2">
-										<button type="submit" class="btn btn-primary">Enviar</button>
-									</div>
 								</div>
 							</form>
 						</div>
 
 						<div class="col-md-6">
-							<h3>Nuestra Dirección</h3>
-							<div id="page">
-								<script
-									src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-								<script>
-									function initialize() {
-										var map_canvas = document
-												.getElementById('map_canvas');
-										var map_options = {
-											center : new google.maps.LatLng(
-													-12.120869, -77.026988),
-											zoom : 30,
-											mapTypeId : google.maps.MapTypeId.ROADMAP
-										}
-										var map = new google.maps.Map(
-												map_canvas, map_options)
-									}
-									google.maps.event.addDomListener(window,
-											'load', initialize);
-								</script>
-								<div id="map_canvas"></div>
-								<br> <br>
-								<address>
-									<strong>MINERQUIM</strong><br>Calle Shell 130 interior 13
-									- Distrito de Miraflores<br> Lima - Peru<br> <abbr
-										title="Phone">Telefono:</abbr> (+51) 01
-								</address>
+							<h3>
+								<spring:message code="label.ourAddress" />
+							</h3>
+							<div class="row">
+								<div class="col-md-12">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d975.212431355145!2d-77.03135438641314!3d-12.122432655585786!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1430716106456"
+										width="100%" height="380" frameborder="0" style="border: 0"></iframe>
+									</br> </br>
+								</div>
 							</div>
+
+							<address style="text-align: right;">
+								<strong><spring:message code="label.enterpriseTitle2" /></strong><br>
+								<spring:message code="label.address1" />
+								</br>
+								<spring:message code="label.addressDistrict1" />
+								</br>
+								<spring:message code="label.country1" />
+								</br> <abbr title="Phone"><spring:message code="label.phone" /></abbr>
+								<spring:message code="label.phoneNumber" />
+								</br>
+								<spring:message code="label.emailContact" />
+							</address>
+
 						</div>
 					</div>
 				</div>
@@ -93,20 +105,21 @@
 			</div>
 		</div>
 	</section>
-
+	<section id="rightNavBar" style="display: none"></section>
 	<c:import url="../views/jspf/footer.jsp" />
 	<script type="text/javascript">
 		viewModelMenu.activeMenuIndex(4);
 	</script>
 </body>
 <script>
-	$(function() {
-		var viewModel = {
-			mainMenuSelected : ko.observable(5),
-		};
+	var contactViewModel = {
+		customerName : ko.observable(null),
+		customerEmail : ko.observable(null),
+		customerPhone : ko.observable(null),
+		customerMessage : ko.observable(null)
+	};
 
-		ko.applyBindings(viewModel, $('#contact')[0]);
-	});
+	ko.applyBindings(contactViewModel, $('#contact')[0]);
 
 	$(function() {
 		$('#sendEmailMessageForm').bootstrapValidator({

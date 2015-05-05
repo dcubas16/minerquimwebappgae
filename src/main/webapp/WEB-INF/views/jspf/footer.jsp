@@ -5,22 +5,21 @@
 
 <hr class="featurette-divider"
 	style="margin-top: 0px; margin-bottom: 0px; border-color: #428bca;">
-<!-- FOOTER -->
 <section id="footer-section">
 	<div class="container">
 		<div class="row  pad-bottom">
 			<div class="col-md-4">
 				<h4>
-					<strong>NOSOTROS</strong>
+					<strong><spring:message code="label.aboutus1" /></strong>
 				</h4>
-				<p>Somos una empresa dedicada a la importación, distribución,
-					venta y asesoramiento técnico de insumos químicos para diversas
-					industrias</p>
-				<a href="aboutus.htm">... leer mas</a>
+				<p>
+					<spring:message code="label.aboutUsAbrev" />
+				</p>
+				<a href="aboutus.htm"><spring:message code="label.readMore" /></a>
 			</div>
 			<div class="col-md-4" style="text-align: center;">
 				<h4>
-					<strong>REDES SOCIALES</strong>
+					<strong><spring:message code="label.socialNetworks" /></strong>
 				</h4>
 				<p>
 					<a href="#"><i class="fa fa-facebook-square fa-3x"></i></a> <a
@@ -29,16 +28,28 @@
 						href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
 				</p>
 			</div>
-			<div class="col-md-3" style="text-align: right;">
+			<div class="col-md-4" style="text-align: right;">
 				<h4>
-					<strong>UBICANOS</strong>
+					<strong><spring:message code="label.contactUs" /></strong>
 				</h4>
 				<p>
-					Calle Shell 130 interior 13 <br>Distrito de Miraflores
+					<spring:message code="label.address" />
+					<spring:message code="label.addressDistrict" />
 				</p>
-				<a href="contact.htm" class="btn btn-primary">Escribenos</a>
+				<p>
+					<spring:message code="label.country" />
+				</p>
+				<p>
+					<spring:message code="label.phone" />
+					<spring:message code="label.phoneNumber" />
+				</p>
+				<p>
+					<spring:message code="label.emailContact" />
+				</p>
+				<a href="contact.htm" class="btn btn-primary"><spring:message
+						code="label.writeUs" /></a>
 			</div>
-			<div class="col-md-1"></div>
+			<!-- 			<div class="col-md-1"></div> -->
 		</div>
 	</div>
 </section>
@@ -46,18 +57,21 @@
 	href="#"> <span class="glyphicon glyphicon-arrow-up"></span></a>
 <style>
 <!--
-
 -->
 </style>
 <script type="text/javascript">
 	var viewModelMenu = {
 		activeMenuIndex : ko.observable(null),
-		activeSubMenuIndex : ko.observable(null),
-		activeSubSubMenuIndex : ko.observable(null),
-
+		currentCulture : ko.observable(null)
 	};
 
+	var viewModelRightNavBar = {
+		activeSubMenuIndex : ko.observable(null),
+		activeSubSubMenuIndex : ko.observable(null),
+	}
+
 	ko.applyBindings(viewModelMenu, $('header')[0]);
+	ko.applyBindings(viewModelRightNavBar, $('#rightNavbar')[0]);
 </script>
 
 <script type="text/javascript">

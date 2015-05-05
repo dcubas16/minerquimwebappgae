@@ -3,7 +3,7 @@
 <%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@	taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
-<html>
+<html lang="en">
 <head>
 <c:import url="../views/jspf/resources.jsp" />
 </head>
@@ -21,7 +21,7 @@
 						<div class="col-md-4"
 							style="padding-top: 6px; padding-left: 6px; padding-right: 6px;">
 							<a href="#" class="thumbnail"> <img
-								src="resources/images/Industrial-Sodium-Metabisulfite.jpg"
+								src="resources/images/SodiumSulphide1.JPG"
 								alt="300x300" style="width: 300px; height: 300px;">
 							</a>
 						</div>
@@ -29,28 +29,25 @@
 							<div class="row">
 								<div class="col-md-6"
 									style="padding-top: 6px; padding-right: 6px; padding-left: 6px;">
-									<h2 style="margin-top: 5px;">Sodium Metabisulphite</h2>
+									<h2 style="margin-top: 5px;">Sodium Sulfide</h2>
 
 								</div>
 								<div class="col-md-6"
 									style="padding-top: 6px; padding-right: 6px; padding-left: 6px; text-align: right;">
 									<a target="blank"
-										href="https://drive.google.com/file/d/0B69Zel8jfJB9MEZrUGd6Z24wdDQ/view?usp=sharing"
-										class="btn btn-primary" role="button"><spring:message code="label.download1"/><span>&nbsp;</span>
+										href="https://drive.google.com/file/d/0B69Zel8jfJB9a1ZzeXBEcDRwSEk/view?usp=sharing"
+										class="btn btn-primary" role="button">Descargar<span>&nbsp;</span>
 										<span class="glyphicon glyphicon-cloud-download"></span></a>
 								</div>
 							</div>
 							<div class="row">
-								<h5 style="margin-top: 5px;"><spring:message code="label.chemistryFormula"/> Na2S2O5</h5>
-								<h5 style="margin-top: 5px;"><spring:message code="label.chemicalName"/> Pyrosulfurous
-									acid, disodium salt</h5>
-								<h5 style="margin-top: 5px;"><spring:message code="label.synonims"/> Disodium
-									disulfite; Disodium pyrosulfite; Sodium Pyrosulfite; Sodium
-									Metabisulphite</h5>
-								<p class="na"><spring:message code="label.salesUnit"/> Kilos (Kg)</p>
+								<h5 style="margin-top: 5px;">Fórmula Química : Na2S</h5>
+								<h5 style="margin-top: 5px;">Nombre Químico : </h5>
+								<h5 style="margin-top: 5px;">Sinonimos :</h5>
+								<p class="na">Unidad de Venta: Kilos (Kg)</p>
 								<p class="na">
 									<a href="#"><span class="glyphicon glyphicon-ok"></span><strong>
-											<spring:message code="label.unitPrice"/></strong></a>
+											Precio Unitario: Cotizar</strong></a>
 								</p>
 <!-- 								<p>Se usa como depresante para la obtención de zinc de las -->
 <!-- 									rocas sulfatadas que contienen cobre, en un proceso en el cual -->
@@ -66,7 +63,7 @@
 						<div class="col-md-12"
 							style="background-color: white; padding-bottom: 6px;">
 							<iframe
-								src="https://docs.google.com/file/d/0B69Zel8jfJB9MEZrUGd6Z24wdDQ/preview"
+								src="https://docs.google.com/file/d/0B69Zel8jfJB9a1ZzeXBEcDRwSEk/preview"
 								width="100%" height="480"></iframe>
 						</div>
 					</div>
@@ -81,7 +78,7 @@
 	<script type="text/javascript">
 		viewModelMenu.activeMenuIndex(2);
 		viewModelRightNavBar.activeSubMenuIndex(0);
-		viewModelRightNavBar.activeSubSubMenuIndex(2);
+		viewModelRightNavBar.activeSubSubMenuIndex(3);
 	</script>
 </body>
 </html>

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
-    <application>spiritual-verve-88703</application>
-    <version>1</version>
-    <threadsafe>true</threadsafe>
-    
-    <system-properties>
-        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
-    </system-properties>
+	<application>spiritual-verve-88703</application>
+	<version>1</version>
+	<threadsafe>true</threadsafe>
+
+	<system-properties>
+		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties" />
+	</system-properties>
+	
+<!-- 	<static-files> -->
+<!-- 		<include path="/index.jsp" /> -->
+<!-- 		<include path="index.jsp" /> -->
+<!-- 		<include path="index.html" /> -->
+<!-- 		<include path="/index.html" /> -->
+<!-- 	</static-files> -->
 </appengine-web-app>

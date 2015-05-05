@@ -2,13 +2,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@	taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%
-	response.setContentType("text/html");
-	response.setCharacterEncoding("UTF-8");
-%>
-<html lang="en">
+
+<html>
 <head>
-<c:import url="../views/jspf/resourcesHome.jsp" />
+<c:import url="../views/jspf/resources.jsp" />
 </head>
 <body>
 	<c:import url="../views/jspf/header.jsp" />
@@ -28,11 +25,12 @@
 							</div>
 							<div class="row">
 								<div class="col-xs-12 col-md-12">
-									<h3 class="h3-thumbnail">Insumos Químicos para la Minería</h3>
-									<p>Eficiente extracción de minerales facilitando la extracción de metales</p>
+									<h3 class="h3-thumbnail">
+										<spring:message code="label.miningDescription" />
+									</h3>
 									<p class="p-thumbnail">
 										<a class="btn btn-primary" href="productsList.htm"
-											role="button">Ver Más »</a>
+											role="button"><spring:message code="label.watchMore" /></a>
 									</p>
 								</div>
 							</div>
@@ -47,13 +45,10 @@
 							</div>
 							<div class="row">
 								<div class="col-xs-12 col-md-12">
-									<h3 class="h3-thumbnail">Insumos Químicos para la
-										Industria del Cuero</h3>
-									<p>Ideales para la curtiembre de cuero, garantizando la
-										calidad de estos</p>
+									<h3 class="h3-thumbnail"><spring:message code="label.leatherDescription" /></h3>
 									<p class="p-thumbnail">
 										<a class="btn btn-primary" href="productsList.htm"
-											role="button">Ver Más »</a>
+											role="button"><spring:message code="label.watchMore" /></a>
 									</p>
 								</div>
 							</div>
@@ -61,7 +56,7 @@
 					</div>
 				</div>
 				<div class="col-md-2">
-					<c:import url="../views/jspf/rigth-navbar.jsp" />
+					<c:import url="../views/jspf/rightNavbar.jsp" />
 				</div>
 				<div class="col-md-1"></div>
 			</div>
@@ -70,6 +65,8 @@
 	<c:import url="../views/jspf/footer.jsp" />
 	<script type="text/javascript">
 		viewModelMenu.activeMenuIndex(2);
+		viewModelRightNavBar.activeSubMenuIndex(0);
+		viewModelRightNavBar.activeSubSubMenuIndex(100);
 	</script>
 </body>
 </html>

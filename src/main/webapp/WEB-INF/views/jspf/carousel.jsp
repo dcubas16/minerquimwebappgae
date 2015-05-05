@@ -17,11 +17,14 @@
 				<img src="resources/images/mining_27.jpg" style="height: 550px;">
 				<div class="carousel-caption left">
 					<div class="row">
-						<h2 class="homepage-title">Insumos químicos</h2>
+						<h2 class="homepage-title">
+							<spring:message code="label.carousel1_1" />
+						</h2>
 					</div>
 					<div class="row">
-						<h2 class="homepage-title">para las diversas industrias
-							locales e internacionales</h2>
+						<h2 class="homepage-title">
+							<spring:message code="label.carousel1_2" />
+						</h2>
 					</div>
 				</div>
 			</div>
@@ -29,11 +32,14 @@
 				<img src="resources/images/leather_2.jpg" style="height: 550px;">
 				<div class="carousel-caption center">
 					<div class="row">
-						<h2 class="homepage-title">Nuestros insumos estan orientados</h2>
+						<h2 class="homepage-title">
+							<spring:message code="label.carousel2_1" />
+						</h2>
 					</div>
 					<div class="row">
-						<h2 class="homepage-title">a la minería, industria del cuero
-							y agricultura</h2>
+						<h2 class="homepage-title">
+							<spring:message code="label.carousel2_2" />
+						</h2>
 					</div>
 				</div>
 			</div>
@@ -42,15 +48,19 @@
 					style="height: 550px;">
 				<div class="carousel-caption right">
 					<div class="row">
-						<h2 class="homepage-title">Nuestra empresa</h2>
+						<h2 class="homepage-title">
+							<spring:message code="label.carousel3_1" />
+						</h2>
 					</div>
 					<div class="row">
-						<h2 class="homepage-title">brinda asesoramiento en la pre y
-							post venta</h2>
+						<h2 class="homepage-title">
+							<spring:message code="label.carousel3_2" />
+						</h2>
 					</div>
 					<div class="row">
-						<h2 class="homepage-title">garantizando el uso adecuado de
-							los insumos</h2>
+						<h2 class="homepage-title">
+							<spring:message code="label.carousel3_3" />
+						</h2>
 					</div>
 				</div>
 			</div>

@@ -21,31 +21,39 @@
 				</a>
 			</div>
 			<div class="navbar-collapse collapse">
-			
-			
 				<ul class="nav navbar-nav nav-minerquim-style header-menu-style">
-					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 0)? 'active' : '' }"><a href="home.htm">INICIO</a></li>
-					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 1)? 'active' : '' }"><a href="aboutus.htm">NOSOTROS</a></li>
-					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 2)? 'active' : '' }"><a href="products.htm">PRODUCTOS</a></li>
-					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 3)? 'active' : '' }"><a href="services.htm">SERVICIOS</a></li>
-					<li data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 4)? 'active' : '' }"><a href="contact.htm">CONTACTANOS</a></li>
+					<li
+						data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 0)? 'active' : '' }"><a
+						href="home.htm"><spring:message code="label.home" /></a></li>
+					<li
+						data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 1)? 'active' : '' }"><a
+						href="aboutus.htm"><spring:message code="label.aboutus" /></a></li>
+					<li
+						data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 2)? 'active' : '' }"><a
+						href="products.htm"><spring:message code="label.products" /></a></li>
+					<li
+						data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 3)? 'active' : '' }"><a
+						href="services.htm"><spring:message code="label.services" /></a></li>
+					<li
+						data-bind="attr: { class: (viewModelMenu.activeMenuIndex() == 4)? 'active' : '' }"><a
+						href="contact.htm"><spring:message code="label.contact" /></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right language-buttom-style">
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown"><span
-							class="glyphicon bfh-flag-ES language-flag-style"></span>Español
-							<span class="caret"></span></a>
+							class="glyphicon bfh-flag-ES language-flag-style"></span>
+						<spring:message code="label.spanish" /> <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#"><span
-									class="glyphicon bfh-flag-US language-flag-style"></span>English
-							</a></li>
+									class="glyphicon bfh-flag-US language-flag-style"></span>
+								<spring:message code="label.english" /> </a></li>
 						</ul></li>
 				</ul>
 			</div>
-
 		</div>
 	</div>
 </header>
-<section class="minerquim-navbar-style" id="separator" style="padding: 0px">
+<section class="minerquim-navbar-style" id="separator"
+	style="padding: 0px">
 	<div class="container minerquim-navbar-style" style="height: 100px"></div>
 </section>
