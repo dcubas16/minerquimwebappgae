@@ -51,7 +51,7 @@
 			</div>
 		</div>
 		<div  class="row  pad-bottom">
-		<div class="col-md-12" style="text-align: center; color:#558FC0;"><span><spring:message code="label.greyPower" /></span></div>
+		<div class="col-md-12" style="text-align: center; color:#4FAEFF;"><span><spring:message code="label.greyPower" /></span></div>
 		</div>
 	</div>
 </section>
