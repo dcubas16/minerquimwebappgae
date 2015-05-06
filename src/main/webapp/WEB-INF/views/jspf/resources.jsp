@@ -10,6 +10,7 @@
 <link href="resources/css/carousel.css" rel="stylesheet">
 <link href="resources/bootstrapformhelpers/css/bootstrap-formhelpers.min.css" rel="stylesheet" media="screen">
 <link href="resources/css/minerquimwebappstyles.css" rel="stylesheet">
+<link href="resources/socialNetworks/rrssb.css" rel="stylesheet">
 
 <script src="resources/js/jquery-1.11.0/jquery-1.11.0.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

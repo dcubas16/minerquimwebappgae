@@ -8,10 +8,5 @@
 		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties" />
 	</system-properties>
 	
-<!-- 	<static-files> -->
-<!-- 		<include path="/index.jsp" /> -->
-<!-- 		<include path="index.jsp" /> -->
-<!-- 		<include path="index.html" /> -->
-<!-- 		<include path="/index.html" /> -->
-<!-- 	</static-files> -->
+	<sessions-enabled>true</sessions-enabled>
 </appengine-web-app>

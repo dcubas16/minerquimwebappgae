@@ -15,8 +15,7 @@
 				<p>
 					<spring:message code="label.aboutUsAbrev" />
 				</p>
-				<a href="aboutus.htm" ><spring:message
-						code="label.readMore" /></a>
+				<a href="aboutus.htm"><spring:message code="label.readMore" /></a>
 			</div>
 			<div class="col-md-4" style="text-align: center;">
 				<h4>
@@ -47,11 +46,14 @@
 				<p>
 					<spring:message code="label.emailContact" />
 				</p>
-				<a href:"contact.htm" class="btn btn-primary"><spring:message code="label.writeUs" /></a>
+				<a href="contact.htm" class="btn btn-primary"><spring:message
+						code="label.writeUs" /></a>
 			</div>
 		</div>
-		<div  class="row  pad-bottom">
-		<div class="col-md-12" style="text-align: center; color:#4FAEFF;"><span><spring:message code="label.greyPower" /></span></div>
+		<div class="row  pad-bottom">
+			<div class="col-md-12" style="text-align: center; color: #4FAEFF;">
+				<span><spring:message code="label.greyPower" /></span>
+			</div>
 		</div>
 	</div>
 </section>
@@ -76,20 +78,27 @@
 	ko.applyBindings(viewModelRightNavBar, $('#rightNavbar')[0]);
 
 	$(function() {
-				if(viewModelMenu.currentCulture() == '' || viewModelMenu.currentCulture() == undefined){
-					viewModelMenu.currentCulture('es_PE');
-				}
-	});
-	
-	$("a").click(function(){
-		if($(this).attr("href") != '#' && $(this).attr("class") != 'languageLink' && $(this).attr("target") != 'blank'){
-			event.preventDefault();
-			var link = $(this).attr("href")+"?language="+viewModelMenu.currentCulture();
-		    window.location.replace(link);
+		if (viewModelMenu.currentCulture() == ''
+				|| viewModelMenu.currentCulture() == undefined) {
+			viewModelMenu.currentCulture('es_PE');
 		}
 	});
-	
-	
+
+	$("a").click(
+			function() {
+				if ($(this).attr("href") != '#'
+						&& $(this).attr("class") != 'languageLink'
+						&& $(this).attr("target") != 'blank') {
+					event.preventDefault();
+					var link = $(this).attr("href") + "?language="
+							+ viewModelMenu.currentCulture();
+					window.location.replace(link);
+				}
+			});
+
+	$(function() {
+		$("[rel='tooltip']").tooltip();
+	});
 </script>
 
 <script type="text/javascript">

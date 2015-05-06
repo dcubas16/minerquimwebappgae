@@ -7,7 +7,7 @@
 	<div
 		class="navbar navbar-default navbar-fixed-top minerquim-navbar-style">
 		<div class="container-fluid">
-			<div class="navbar-header" style="padding-left: 12%">
+			<div class="navbar-header" style="padding-left: 14%">
 				<button type="button" class="navbar-toggle collapsed"
 					data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
@@ -39,6 +39,22 @@
 						href="contact.htm"><spring:message code="label.contact" /></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right language-buttom-style">
+					<li>
+						<ul class="rrssb-buttons clearfix">
+							<li class="rrssb-facebook"><a target="blank" rel='tooltip' data-toggle="tooltip" data-placement="right" title="Compartir en facebook"
+								href="https://www.facebook.com/sharer/sharer.php?u=http://minerquim.com"
+								class="popup"
+								style="padding-top: 0px; background-color: transparent; padding-left: 2px; padding-right: 2px;">
+									<i class="fa fa-facebook-square fa-3x"></i>
+							</a></li>
+							<li class="rrssb-twitter"><a  target="blank"  rel='tooltip' data-toggle="tooltip" data-placement="right" title="Compartir en twitter"
+								href="http://twitter.com/home?status=http%3A%2F%2Fminerquim.com"
+								class="popup"
+								style="padding-top: 0px; background-color: transparent; padding-left: 2px; padding-right: 2px;">
+									<i class="fa fa-twitter-square fa-3x"></i>
+							</a></li>
+						</ul>
+					</li>
 					<li class="dropdown"><a
 						data-bind="style:{display: (viewModelMenu.currentCulture() == 'es_PE' || viewModelMenu.currentCulture() == undefined || viewModelMenu.currentCulture() == '')  ? 'block': 'none'} "
 						href="#" class="dropdown-toggle" data-toggle="dropdown"> <span
@@ -52,13 +68,13 @@
 					</a>
 						<ul class="dropdown-menu" role="menu">
 							<li
-								data-bind="style:{display:viewModelMenu.currentCulture() != 'en_US'? 'block': 'none'}"><a class="languageLink"
-								href="?language=en_US"> <span
+								data-bind="style:{display:viewModelMenu.currentCulture() != 'en_US'? 'block': 'none'}"><a
+								class="languageLink" href="?language=en_US"> <span
 									class="glyphicon bfh-flag-US language-flag-style"> </span> <spring:message
 										code="label.english" /></a></li>
 							<li
-								data-bind="style:{display:viewModelMenu.currentCulture() != 'es_PE' ? 'block': 'none'}"><a class="languageLink"
-								href="?language=es_PE"> <span
+								data-bind="style:{display:viewModelMenu.currentCulture() != 'es_PE' ? 'block': 'none'}"><a
+								class="languageLink" href="?language=es_PE" > <span
 									class="glyphicon bfh-flag-ES language-flag-style"> </span> <spring:message
 										code="label.spanish" /></span>
 							</a></li>
