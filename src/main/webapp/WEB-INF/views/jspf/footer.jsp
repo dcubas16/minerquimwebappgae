@@ -15,7 +15,8 @@
 				<p>
 					<spring:message code="label.aboutUsAbrev" />
 				</p>
-				<a href="aboutus.htm"><spring:message code="label.readMore" /></a>
+				<a href="aboutus.htm" ><spring:message
+						code="label.readMore" /></a>
 			</div>
 			<div class="col-md-4" style="text-align: center;">
 				<h4>
@@ -46,10 +47,11 @@
 				<p>
 					<spring:message code="label.emailContact" />
 				</p>
-				<a href="contact.htm" class="btn btn-primary"><spring:message
-						code="label.writeUs" /></a>
+				<a href:"contact.htm" class="btn btn-primary"><spring:message code="label.writeUs" /></a>
 			</div>
-			<!-- 			<div class="col-md-1"></div> -->
+		</div>
+		<div  class="row  pad-bottom">
+		<div class="col-md-12" style="text-align: center; color:#558FC0;"><span><spring:message code="label.greyPower" /></span></div>
 		</div>
 	</div>
 </section>
@@ -62,16 +64,32 @@
 <script type="text/javascript">
 	var viewModelMenu = {
 		activeMenuIndex : ko.observable(null),
-		currentCulture : ko.observable(null)
+		currentCulture : ko.observable('${currentCulture}')
 	};
 
 	var viewModelRightNavBar = {
 		activeSubMenuIndex : ko.observable(null),
 		activeSubSubMenuIndex : ko.observable(null),
-	}
+	};
 
 	ko.applyBindings(viewModelMenu, $('header')[0]);
 	ko.applyBindings(viewModelRightNavBar, $('#rightNavbar')[0]);
+
+	$(function() {
+				if(viewModelMenu.currentCulture() == '' || viewModelMenu.currentCulture() == undefined){
+					viewModelMenu.currentCulture('es_PE');
+				}
+	});
+	
+	$("a").click(function(){
+		if($(this).attr("href") != '#' && $(this).attr("class") != 'languageLink' && $(this).attr("target") != 'blank'){
+			event.preventDefault();
+			var link = $(this).attr("href")+"?language="+viewModelMenu.currentCulture();
+		    window.location.replace(link);
+		}
+	});
+	
+	
 </script>
 
 <script type="text/javascript">

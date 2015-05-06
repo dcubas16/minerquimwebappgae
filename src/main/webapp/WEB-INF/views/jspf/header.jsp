@@ -39,14 +39,29 @@
 						href="contact.htm"><spring:message code="label.contact" /></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right language-buttom-style">
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown"><span
-							class="glyphicon bfh-flag-ES language-flag-style"></span>
-						<spring:message code="label.spanish" /> <span class="caret"></span></a>
+					<li class="dropdown"><a
+						data-bind="style:{display: (viewModelMenu.currentCulture() == 'es_PE' || viewModelMenu.currentCulture() == undefined || viewModelMenu.currentCulture() == '')  ? 'block': 'none'} "
+						href="#" class="dropdown-toggle" data-toggle="dropdown"> <span
+							class="glyphicon bfh-flag-ES language-flag-style"> </span> <spring:message
+								code="label.spanish" /> <span class="caret"></span>
+					</a> <a
+						data-bind="style:{display:viewModelMenu.currentCulture() == 'en_US'? 'block': 'none'} "
+						href="#" class="dropdown-toggle" data-toggle="dropdown"> <span
+							class="glyphicon bfh-flag-US language-flag-style"> </span> <spring:message
+								code="label.english" /> <span class="caret"></span>
+					</a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#"><span
-									class="glyphicon bfh-flag-US language-flag-style"></span>
-								<spring:message code="label.english" /> </a></li>
+							<li
+								data-bind="style:{display:viewModelMenu.currentCulture() != 'en_US'? 'block': 'none'}"><a class="languageLink"
+								href="?language=en_US"> <span
+									class="glyphicon bfh-flag-US language-flag-style"> </span> <spring:message
+										code="label.english" /></a></li>
+							<li
+								data-bind="style:{display:viewModelMenu.currentCulture() != 'es_PE' ? 'block': 'none'}"><a class="languageLink"
+								href="?language=es_PE"> <span
+									class="glyphicon bfh-flag-ES language-flag-style"> </span> <spring:message
+										code="label.spanish" /></span>
+							</a></li>
 						</ul></li>
 				</ul>
 			</div>
@@ -57,3 +72,15 @@
 	style="padding: 0px">
 	<div class="container minerquim-navbar-style" style="height: 100px"></div>
 </section>
+<script>
+	function getUrlParameter(sParam) {
+		var sPageURL = window.location.search.substring(1);
+		var sURLVariables = sPageURL.split('&');
+		for (var i = 0; i < sURLVariables.length; i++) {
+			var sParameterName = sURLVariables[i].split('=');
+			if (sParameterName[0] == sParam) {
+				return sParameterName[1];
+			}
+		}
+	}
+</script>

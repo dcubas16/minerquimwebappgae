@@ -73,7 +73,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="rightNavBar" style="display: none"></section>
+	<section id="rightNavbar" style="display: none"></section>
 	<c:import url="../views/jspf/footer.jsp" />
 	<script type="text/javascript">
 		viewModelMenu.activeMenuIndex(1);
