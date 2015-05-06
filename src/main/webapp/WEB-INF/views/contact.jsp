@@ -22,7 +22,7 @@
 							</h3>
 							<form id="sendEmailMessageForm" class="form-horizontal"
 								action="Mail/sendMail.htm" method="get"
-								commandName="emailSender">
+								commandName="emailSender" style="display: none">
 								<div class="form-group">
 									<div class="col-md-8">
 										<input data-bind="value:contactViewModel.customerName"

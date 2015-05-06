@@ -41,13 +41,13 @@
 				<ul class="nav navbar-nav navbar-right language-buttom-style">
 					<li>
 						<ul class="rrssb-buttons clearfix">
-							<li class="rrssb-facebook"><a target="blank" rel='tooltip' data-toggle="tooltip" data-placement="right" title="Compartir en facebook"
+							<li class="rrssb-facebook"><a target="blank" rel='tooltip' data-toggle="tooltip" data-placement="right" title="<spring:message code="label.shareInFacebook" />"
 								href="https://www.facebook.com/sharer/sharer.php?u=http://minerquim.com"
 								class="popup"
 								style="padding-top: 0px; background-color: transparent; padding-left: 2px; padding-right: 2px;">
 									<i class="fa fa-facebook-square fa-3x"></i>
 							</a></li>
-							<li class="rrssb-twitter"><a  target="blank"  rel='tooltip' data-toggle="tooltip" data-placement="right" title="Compartir en twitter"
+							<li class="rrssb-twitter"><a  target="blank"  rel='tooltip' data-toggle="tooltip" data-placement="right" title="<spring:message code="label.shareInTwitter" />"
 								href="http://twitter.com/home?status=http%3A%2F%2Fminerquim.com"
 								class="popup"
 								style="padding-top: 0px; background-color: transparent; padding-left: 2px; padding-right: 2px;">
