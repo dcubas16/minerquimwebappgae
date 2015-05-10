@@ -80,7 +80,7 @@
 								<div class="col-md-12">
 									<iframe
 										src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d975.212431355145!2d-77.03135438641314!3d-12.122432655585786!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1430716106456"
-										width="100%" height="380" frameborder="0" style="border: 0"></iframe>
+										width="100%" height="360" frameborder="0" style="border: 0"></iframe>
 									</br> </br>
 								</div>
 							</div>

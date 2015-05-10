@@ -24,7 +24,7 @@ public class MailController {
 			@RequestParam(required = false) String message, Model model) {
 
 		String[] sendToList = new String[2];
-		sendToList[0] = "minerquim2015@gmail.com";
+		sendToList[0] = "ventas@minerquim.com";
 		// sendToList[1] = "dcubas16@hotmail.com";
 
 		mail.sendMail(email, sendToList, "INFORMATION" + "-" + names + "-"

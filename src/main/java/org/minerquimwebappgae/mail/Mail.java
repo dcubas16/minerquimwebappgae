@@ -50,9 +50,10 @@ public class Mail {
 		 
 		 try {
 		        InternetAddress from = new InternetAddress(from1);
+		        
 		        message.setSubject(subject);
 		        message.setFrom(from);
-		        message.addRecipients(Message.RecipientType.TO, InternetAddress.parse("minerquim2015@gmail.com"));
+		        message.addRecipients(Message.RecipientType.TO, InternetAddress.parse("ventas@minerquim.com"));
 
 		        // Create a multi-part to combine the parts
 		        Multipart multipart = new MimeMultipart("alternative");
