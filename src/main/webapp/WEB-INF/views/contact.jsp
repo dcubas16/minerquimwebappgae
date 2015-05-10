@@ -16,13 +16,13 @@
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-xs-12 col-sm-12">
 							<h3>
 								<spring:message code="label.sendUsAMessage" />
 							</h3>
 							<form id="sendEmailMessageForm" class="form-horizontal"
 								action="Mail/sendMail.htm" method="get"
-								commandName="emailSender" style="display: none">
+								commandName="emailSender" style="display: block">
 								<div class="form-group">
 									<div class="col-md-8">
 										<input data-bind="value:contactViewModel.customerName"
@@ -50,9 +50,9 @@
 								<div class="form-group">
 									<div class="col-md-12">
 										<textarea data-bind="value:contactViewModel.customerMessage"
-											class="form-control" rows="3" placeholder="Mensaje"
-											style="height: 208px;"
-											name="<spring:message code="label.message" />"></textarea>
+											class="form-control" rows="3" style="height: 208px;"
+											placeholder="<spring:message code="label.message" />"
+											name="message" id="message"></textarea>
 									</div>
 								</div>
 								<div class="form-group" style="padding-right: 15px;">
@@ -72,7 +72,7 @@
 							</form>
 						</div>
 
-						<div class="col-md-6">
+						<div class="col-md-6 col-xs-12 col-sm-12">
 							<h3>
 								<spring:message code="label.ourAddress" />
 							</h3>

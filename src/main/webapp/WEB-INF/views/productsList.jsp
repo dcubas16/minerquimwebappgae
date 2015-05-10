@@ -15,7 +15,7 @@
 				<div class="col-md-1"></div>
 				<div class="col-md-9">
 					<div class="row">
-						<div class="col-sm-12 col-md-4">
+						<div class="col-md-4 col-xs-12 col-sm-12">
 							<div class="thumbnail">
 								<img src="resources/images/CausticSoda.jpg" alt="300x200"
 									style="width: 300px; height: 200px;">
@@ -41,7 +41,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-12 col-md-4">
+						<div class="col-md-4  col-xs-12 col-sm-12">
 							<div class="thumbnail">
 								<img src="resources/images/SodiumHydrosulfideHydrate1.jpg"
 									alt="300x200" style="width: 300px; height: 200px;">
@@ -65,7 +65,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-12 col-md-4">
+						<div class="col-md-4 col-xs-12 col-sm-12">
 							<div class="thumbnail">
 								<img src="resources/images/Industrial-Sodium-Metabisulfite.jpg"
 									alt="300x200" style="width: 300px; height: 200px;">
@@ -91,7 +91,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-12 col-md-4">
+						<div class="col-md-4 col-xs-12 col-sm-12">
 							<div class="thumbnail">
 								<img src="resources/images/SodiumSulphide1.JPG" alt="300x200"
 									style="width: 300px; height: 200px;">

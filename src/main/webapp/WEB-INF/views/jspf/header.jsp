@@ -44,14 +44,14 @@
 							<li class="rrssb-facebook"><a target="blank" rel='tooltip' data-toggle="tooltip" data-placement="right" title="<spring:message code="label.shareInFacebook" />"
 								href="https://www.facebook.com/sharer/sharer.php?u=http://minerquim.com"
 								class="popup"
-								style="padding-top: 0px; background-color: transparent; padding-left: 2px; padding-right: 2px;">
-									<i class="fa fa-facebook-square fa-3x"></i>
+								style="padding-top: 2px; background-color: transparent; padding-left: 2px; padding-right: 2px;">
+									<i class="fa fa-facebook-square fa-2x"></i>
 							</a></li>
 							<li class="rrssb-twitter"><a  target="blank"  rel='tooltip' data-toggle="tooltip" data-placement="right" title="<spring:message code="label.shareInTwitter" />"
 								href="http://twitter.com/home?status=http%3A%2F%2Fminerquim.com"
 								class="popup"
-								style="padding-top: 0px; background-color: transparent; padding-left: 2px; padding-right: 2px;">
-									<i class="fa fa-twitter-square fa-3x"></i>
+								style="padding-top: 2px; background-color: transparent; padding-left: 2px; padding-right: 2px;">
+									<i class="fa fa-twitter-square fa-2x"></i>
 							</a></li>
 						</ul>
 					</li>

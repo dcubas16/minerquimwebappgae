@@ -35,7 +35,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-6 col-sm-6 col-lg-6">
+						<div class="col-md-6 col-xs-12 col-sm-12">
 							<div class="row">
 								<div class="col-xs-12 col-md-12">
 									<a href="productsList.htm" class="thumbnail image-thumbnail">
